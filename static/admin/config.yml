@@ -1,11 +1,12 @@
 backend:
-  name: test-repo
+  name: github
+  repo: SamiiRoebuck/harry-portfolio
 
 media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
+  - name: Harry's portfolio
     label: Blog
     folder: blog
     create: true
