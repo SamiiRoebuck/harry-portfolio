@@ -13,13 +13,18 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "gatsby": "^2.3.16",
     "gatsby-plugin-netlify-cms": "^3.0.18",
+    "gatsby-plugin-sass": "^2.0.11",
+    "material-ui-icons": "^1.0.0-beta.36",
     "netlify-cms": "^2.9.1",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "node-sass": "^4.12.0",
     "prettier": "^1.17.0"
   },
   "repository": {
