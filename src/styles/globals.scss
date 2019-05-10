@@ -3,3 +3,12 @@
 body {
     color: $primaryTeal;
 }
+
+.content {
+    position: relative;
+  }
+  
+  #responsive-navbar-nav {
+    // position: absolute;
+    z-index: 1;
+  }
