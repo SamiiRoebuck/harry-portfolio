@@ -10,6 +10,8 @@ export default () => (
       <NavBar/>
     </div>
 
-    <NavMenu className="content" />
+    <main>
+      <NavMenu/>
+    </main>
   </div>
 )

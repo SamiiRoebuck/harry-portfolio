@@ -1,14 +1,41 @@
-@import '_variables.scss';
+@import "_variables.scss";
 
 body {
-    font-family:  korolev, sans-serif !important;
-    font-size: 16px;
+  font-family: korolev, sans-serif !important;
+  font-size: 16px;
+}
+
+main {
+  background-color: rgb(235, 235, 235);
+  padding: 20px;
+  margin: 20px;
+  height: 90vh;
 }
 
 .navbar {
   font-size: 18px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 10px;
+  height: 10vh;
+
+  div {
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    /*background-color: #f1f1f1;*/
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+  }
+
+  img {
+    margin-left: 4px;
+  }
+
+  ul {
+    padding-inline-start: 0px;
+    margin-right: 8px;
+    line-height: 0.5;
+    margin-top: 20px;
+  }
 }
 
 .main-nav {
@@ -16,10 +43,12 @@ body {
   display: none;
 }
 
-.nav-links,
-.logo {
+.nav-links {
   text-decoration: none;
   color: black;
+  padding: 0px 0px;
+  // border: solid 0px white;
+  padding: 10px 10px;
 }
 
 .main-nav li {
@@ -47,40 +76,63 @@ body {
   display: block;
 }
 
+.active-link {
+  border-top: 3px solid $primaryOrange;
+  border-bottom: 3px solid $primaryOrange;
+  padding: 10px 10px;
+  animation: active-link .5s;
+}
+
+@keyframes active-link {
+  from {
+    border-top-color: white;
+    border-bottom-color: white;
+    border-width: 3px;
+    padding: 0px 10px;
+  }
+  to {
+    border-top-color:  $primaryOrange;
+    border-bottom-color:  $primaryOrange;
+    border-width: 3px;
+    padding: 10px 10px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 70px;
-      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
   }
 
   .main-nav {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      justify-content: flex-end;
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 
   .main-nav li {
-      margin: 0;
+    margin: 0;
   }
 
   .nav-links {
-      margin-left: 40px;
+    margin-left: 40px;
   }
 
   .logo {
-      margin-top: 0;
+    margin-top: 0;
   }
 
   .navbar-toggle {
-      display: none;
+    display: none;
   }
 
   .logo:hover,
   .nav-links:hover {
-      color: rgba(255, 255, 255, 1);
+    color: $primaryOrange;
+    text-decoration: none;
   }
 }
