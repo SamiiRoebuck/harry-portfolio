@@ -3,19 +3,43 @@
 body {
   font-family: korolev, sans-serif !important;
   font-size: 16px;
+  // margin: 25px 50px 30px 50px;
+  height: 100vh;
 }
 
 main {
   background-color: rgb(235, 235, 235);
   padding: 20px;
-  margin: 20px;
-  height: 90vh;
+  margin:90px 12px 12px 12px;
+  background-attachment: scroll;
+  // overflow: hidden;
+  position: relative;
+  z-index:-1;
+
+  div {
+    height: 200px;
+    background-color: orange;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  height: 10vh;
+  margin-top: 10px;
+  background-color: white;
 }
 
 .navbar {
   font-size: 18px;
-  padding-bottom: 10px;
-  height: 10vh;
+  height: 90px;
+  position: fixed;
+  background-color:white;
+  width: calc(100% - 70px);
+  top: 0px;
+  left: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   div {
     height: 60px;
@@ -24,10 +48,6 @@ main {
     /*background-color: #f1f1f1;*/
     border-top: 4px solid #000;
     border-bottom: 4px solid #000;
-  }
-
-  img {
-    margin-left: 4px;
   }
 
   ul {
@@ -81,6 +101,7 @@ main {
   border-bottom: 3px solid $primaryOrange;
   padding: 10px 10px;
   animation: active-link .5s;
+  animation-timing-function:cubic-bezier(.17,.67,.59,3);
 }
 
 @keyframes active-link {
@@ -103,7 +124,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
-    height: 70px;
+    // height: 70px;
     align-items: center;
   }
 
@@ -135,4 +156,46 @@ main {
     color: $primaryOrange;
     text-decoration: none;
   }
+}
+
+
+.page-border {
+  position: fixed;
+  z-index: 999999;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.page-border > .top-border, .page-border > .right-border, .page-border > .bottom-border, .page-border > .left-border {
+  padding: 12px;
+  background: white !important;
+}
+
+.page-border .bottom-border, .page-border .left-border, .page-border .right-border, .page-border .top-border {
+  background: green;
+  position: fixed;
+  z-index: 9999;
+}
+
+.page-border .bottom-border, .page-border .top-border {
+  width: 100%;
+  padding: 11px;
+  left: 0;
+}
+
+.page-border .right-border {
+  right: 0;
+}
+
+.page-border .left-border, .page-border .right-border {
+  padding: 11px;
+  height: 100%;
+  top: 0;
+}
+
+.page-border .bottom-border {
+  bottom: 0;
 }
