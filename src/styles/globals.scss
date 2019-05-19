@@ -1,4 +1,5 @@
 @import "_variables.scss";
+@import "_mediaqueries.scss";
 
 body {
   font-family: korolev, sans-serif !important;
@@ -10,15 +11,15 @@ body {
 main {
   background-color: rgb(235, 235, 235);
   padding: 20px;
-  margin:90px 12px 12px 12px;
+  margin: 90px 12px 12px 12px;
   background-attachment: scroll;
   // overflow: hidden;
   position: relative;
-  z-index:-1;
+  z-index: -1;
 
   div {
     height: 200px;
-    background-color: orange;
+    // background-color: orange;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -34,74 +35,125 @@ footer {
   font-size: 18px;
   height: 90px;
   position: fixed;
-  background-color:white;
-  width: calc(100% - 70px);
+  background-color: white;
+  width: calc(100% - 30px);
   top: 0px;
   left: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
 
+  @include md {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% - 70px);
+  }
+
+  // lines for the active animation
   div {
     height: 60px;
     position: absolute;
     top: 0px;
-    /*background-color: #f1f1f1;*/
     border-top: 4px solid #000;
     border-bottom: 4px solid #000;
   }
 
   ul {
     padding-inline-start: 0px;
-    margin-right: 8px;
-    line-height: 0.5;
-    margin-top: 20px;
+
+    @include md {
+      margin-right: 8px;
+      line-height: 0.5;
+      margin-top: 20px;
+    }
+  }
+
+  img {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  svg {
+    font-size: 20px;
+    margin-top: 15px;
   }
 }
 
 .main-nav {
   list-style-type: none;
-  display: none;
+  // margin-top: -100vh;
+  display: block;
 }
 
 .nav-links {
   text-decoration: none;
   color: black;
   padding: 0px 0px;
-  // border: solid 0px white;
   padding: 10px 10px;
 }
 
 .main-nav li {
   text-align: center;
-  margin: 15px auto;
-}
+  margin: 35px auto;
 
-.logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px;
+  @include md {
+    margin: 15px auto;
+  }
 }
-
 .navbar-toggle {
   position: absolute;
   top: 10px;
   right: 20px;
   cursor: pointer;
-  color: black;
+  color: $darkTeal;
   font-size: 24px;
 }
 
 .active {
   display: block;
+  height: 100vh;
+  background-color: white;
+  animation: slide-in-nav 0.7s ease-out;
+  margin-top: -30px;
+
+  @include md {
+    postion: unset;
+    height: unset;
+    top: unset;
+    left: unset;
+  }
+}
+
+.not-active {
+  display: block;
+  height: 100vh;
+  background-color: white;
+  animation: slide-out-nav 0.7s ease-out;
+  margin-top: -105vh;
+
+}
+
+@keyframes slide-out-nav {
+  from {
+    margin-top: -10vh;
+  }
+  to {
+    margin-top: -105vh;
+  }
+}
+
+@keyframes slide-in-nav {
+  from {
+    margin-top: -100vh;
+  }
+  to {
+    margin-top: -30px;
+  }
 }
 
 .active-link {
   border-top: 3px solid $primaryOrange;
   border-bottom: 3px solid $primaryOrange;
   padding: 10px 10px;
-  animation: active-link .5s;
-  animation-timing-function:cubic-bezier(.17,.67,.59,3);
+  animation: active-link 0.5s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.59, 3);
 }
 
 @keyframes active-link {
@@ -112,8 +164,8 @@ footer {
     padding: 0px 10px;
   }
   to {
-    border-top-color:  $primaryOrange;
-    border-bottom-color:  $primaryOrange;
+    border-top-color: $primaryOrange;
+    border-bottom-color: $primaryOrange;
     border-width: 3px;
     padding: 10px 10px;
   }
@@ -158,7 +210,6 @@ footer {
   }
 }
 
-
 .page-border {
   position: fixed;
   z-index: 999999;
@@ -169,18 +220,25 @@ footer {
   pointer-events: none;
 }
 
-.page-border > .top-border, .page-border > .right-border, .page-border > .bottom-border, .page-border > .left-border {
+.page-border > .top-border,
+.page-border > .right-border,
+.page-border > .bottom-border,
+.page-border > .left-border {
   padding: 12px;
   background: white !important;
 }
 
-.page-border .bottom-border, .page-border .left-border, .page-border .right-border, .page-border .top-border {
+.page-border .bottom-border,
+.page-border .left-border,
+.page-border .right-border,
+.page-border .top-border {
   background: green;
   position: fixed;
   z-index: 9999;
 }
 
-.page-border .bottom-border, .page-border .top-border {
+.page-border .bottom-border,
+.page-border .top-border {
   width: 100%;
   padding: 11px;
   left: 0;
@@ -190,7 +248,8 @@ footer {
   right: 0;
 }
 
-.page-border .left-border, .page-border .right-border {
+.page-border .left-border,
+.page-border .right-border {
   padding: 11px;
   height: 100%;
   top: 0;

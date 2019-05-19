@@ -2,12 +2,12 @@ import React from "react"
 import logo from "../images/logo.png"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 
 class NavBar extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isToggleOn: true }
+    this.state = { isToggleOn: true, icon: faBars }
 
     // This binding is necessary to make `this` work in the callback
     this.handleClickBurger = this.handleClickBurger.bind(this)
@@ -16,6 +16,7 @@ class NavBar extends React.Component {
   handleClickBurger() {
     this.setState(state => ({
       isToggleOn: !state.isToggleOn,
+      icon: state.icon == faTimes ? faBars : faTimes
     }))
   }
 
@@ -29,9 +30,9 @@ class NavBar extends React.Component {
           id="js-navbar-toggle"
           onClick={this.handleClickBurger}
         >
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={this.state.icon} />
         </span>
-        <img src={logo} height="70" />
+        <img src={logo} height="70" alt='logo'/>
         <ul
           className={`main-nav ${
             this.state.isToggleOn ? "not-active" : "active"

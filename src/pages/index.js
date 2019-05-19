@@ -5,13 +5,11 @@ import "../styles/globals.scss"
 
 export default () => (
   <div>
-    <div>
       <NavBar />
-    </div>
-    <div class="page-border">
-      <div class="right-border" />
-      <div class="bottom-border" />
-      <div class="left-border" />
+    <div className="page-border">
+      <div className="right-border" />
+      <div className="bottom-border" />
+      <div className="left-border" />
     </div>
     <main>
       <div />
