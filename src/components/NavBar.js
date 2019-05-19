@@ -16,11 +16,11 @@ class NavBar extends React.Component {
   handleClickBurger() {
     this.setState(state => ({
       isToggleOn: !state.isToggleOn,
-      icon: state.icon == faTimes ? faBars : faTimes
+      icon: state.icon === faTimes ? faBars : faTimes
     }))
+
   }
-
-
+  
   render() {
     return (
       <nav className="navbar">

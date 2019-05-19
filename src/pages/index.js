@@ -1,18 +1,17 @@
 import React from "react"
 import NavBar from "../components/NavBar"
+import PageBorder from "../components/PageBorder"
+import TypedHeader from '../components/TypedHeader'
 
+import Typed from "typed.js"
 import "../styles/globals.scss"
 
 export default () => (
   <div>
-      <NavBar />
-    <div className="page-border">
-      <div className="right-border" />
-      <div className="bottom-border" />
-      <div className="left-border" />
-    </div>
+    <NavBar />
+    <PageBorder />
     <main>
-      <div />
+<TypedHeader />
       <div />
       <div />
       <div />
