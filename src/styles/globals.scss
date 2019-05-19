@@ -1,36 +1,84 @@
 @import "_variables.scss";
 @import "_mediaqueries.scss";
 
+@import url("https://use.typekit.net/xzb4vuh.css");
+
 body {
-  font-family: korolev, sans-serif !important;
+  font-family: korolev, sans-serif;
   font-size: 16px;
-  // margin: 25px 50px 30px 50px;
   height: 100vh;
+  color: $black;
 }
 
 main {
-  background-color: rgb(235, 235, 235);
-  padding: 20px;
-  margin: 90px 12px 12px 12px;
+  background-color: #f2f2f2;
+  margin: 67px 12px 12px 12px;
   background-attachment: scroll;
-  // overflow: hidden;
   position: relative;
   z-index: -1;
+  padding: 20px 0px;
 
   div {
     height: 200px;
-    // background-color: orange;
     width: 100%;
     margin-bottom: 20px;
   }
 
   section {
-    background-color: pink;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
 
-    .typed {
-      display: inline-block;
-      font-size: 25px;
+    &.title {
+      text-align: center;
+      height: 170px;
+      position: relative;
+
+      h1 {
+        font-size: 2.5em;
+        padding: 0.75em;
+        margin: 0px;
+
+        &::before {
+          content: "";
+          height: 5px;
+          width: 250px;
+          left: calc(50% - 125px);
+          margin-top: -10px;
+          background-color: $primaryTeal;
+          position: absolute;
+        }
+
+        &::after {
+          content: "";
+          height: 5px;
+          width: 250px;
+          left: calc(50% - 125px);
+          bottom: 45%;
+          background-color: $primaryTeal;
+          position: absolute;
+        }
+      }
+      .typed {
+        display: inline-block;
+        font-size: 25px;
+        margin: 0px;
+      }
+    }
+
+    &.about-container {
+      display: flex;
+      flex-wrap: wrap;
+
+       & > div {
+        background-color: #f1f1f1;
+        width: 45%;
+        margin: 1.75%;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
     }
 
     img {
@@ -48,7 +96,7 @@ footer {
 
 .navbar {
   font-size: 18px;
-  height: 90px;
+  height: 67px;
   position: fixed;
   background-color: white;
   width: calc(100% - 30px);
@@ -59,15 +107,6 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
     width: calc(100% - 70px);
-  }
-
-  // lines for the active animation
-  div {
-    height: 60px;
-    position: absolute;
-    top: 0px;
-    border-top: 4px solid #000;
-    border-bottom: 4px solid #000;
   }
 
   ul {
@@ -81,8 +120,11 @@ footer {
   }
 
   img {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 0px;
+    @include md {
+      margin-top: 0px;
+    }
   }
 
   svg {
@@ -173,8 +215,8 @@ footer {
   border-top: 3px solid $primaryOrange;
   border-bottom: 3px solid $primaryOrange;
   padding: 10px 10px;
-  animation: active-link 0.5s;
-  animation-timing-function: cubic-bezier(0.17, 0.67, 0.59, 3);
+  animation: active-link 0.3s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.59, 2);
 }
 
 @keyframes active-link {
@@ -199,6 +241,9 @@ footer {
     padding-bottom: 0;
     // height: 70px;
     align-items: center;
+    -webkit-box-shadow: -5px 7px 10px -9px rgb(168, 168, 168);
+    -moz-box-shadow: -5px 7px 10px -9px rgb(168, 168, 168);
+    box-shadow: -5px 7px 10px -9px rgb(168, 168, 168);
   }
 
   .main-nav {
@@ -246,7 +291,7 @@ footer {
   & > .bottom-border,
   & > .left-border {
     padding: 12px;
-    background: white;
+    background: rgb(255, 255, 255);
   }
 
   .bottom-border,

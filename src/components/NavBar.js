@@ -24,7 +24,6 @@ class NavBar extends React.Component {
   render() {
     return (
       <nav className="navbar">
-      <div className="hoverLines"></div>
         <span
           className="navbar-toggle"
           id="js-navbar-toggle"
@@ -32,7 +31,7 @@ class NavBar extends React.Component {
         >
           <FontAwesomeIcon icon={this.state.icon} />
         </span>
-        <img src={logo} height="70" alt='logo'/>
+        <img src={logo} height="50" alt='logo'/>
         <ul
           className={`main-nav ${
             this.state.isToggleOn ? "not-active" : "active"

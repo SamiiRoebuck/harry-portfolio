@@ -1,17 +1,19 @@
 import React from "react"
 import NavBar from "../components/NavBar"
-import NavMenu from "../components/NavMenu"
+import PageBorder from "../components/PageBorder"
 
 import "../styles/globals.scss"
 
 export default () => (
-  <div>
-    <div>
-      <NavBar/>
-    </div>
-
+  <React.Fragment>
+    <NavBar />
+    <PageBorder />
     <main>
-      <NavMenu/>
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
     </main>
-  </div>
+  </React.Fragment>
 )

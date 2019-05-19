@@ -1,17 +1,23 @@
 import React from "react"
 import NavBar from "../components/NavBar"
-import NavMenu from "../components/NavMenu"
+import PageBorder from "../components/PageBorder"
+import about from "../images/about.jpg"
 
 import "../styles/globals.scss"
 
 export default () => (
-  <div>
-    <div>
-      <NavBar/>
-    </div>
-
+  <React.Fragment>
+    <NavBar />
+    <PageBorder />
     <main>
-      <NavMenu/>
+      <section className="about-container">
+      <div>
+        <img src={about} alt="image of Harry York" />
+        </div>
+        <div>
+          <p>Lorem</p>
+        </div>
+      </section>
     </main>
-  </div>
+  </React.Fragment>
 )
