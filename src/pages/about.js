@@ -12,7 +12,7 @@ export default () => (
     <main>
       <section className="about-container">
       <div>
-        <img src={about} alt="image of Harry York" />
+        <img src={about} alt="Harry York" />
         </div>
         <div>
           <p>Lorem</p>
