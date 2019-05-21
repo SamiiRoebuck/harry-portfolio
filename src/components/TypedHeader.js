@@ -7,7 +7,7 @@ class TypedHeader extends React.Component {
             strings: ["Product Designer", "CAD Draftsman", "Friend to the Earth"],
             typeSpeed: 120,
             backDelay: 500,
-            loop: true,
+            loop: false,
             showCursor: true,
             cursorChar: '_'
         }

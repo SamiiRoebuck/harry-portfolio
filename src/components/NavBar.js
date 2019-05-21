@@ -42,7 +42,7 @@ class NavBar extends React.Component {
         >
           <li>
             <Link to="/" className="nav-links" activeClassName="active-link">
-              Home
+              Work
             </Link>
           </li>
           <li>
