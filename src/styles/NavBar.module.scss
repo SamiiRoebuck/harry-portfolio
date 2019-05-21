@@ -1,0 +1,172 @@
+@import "_variables.scss";
+@import "_mediaqueries.scss";
+
+@import url("https://use.typekit.net/xzb4vuh.css");
+
+.navbar {
+  font-size: 18px;
+  height: 70px;
+  position: fixed;
+  background-color: white;
+  width: calc(100%);
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+
+  @include md {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: calc(100% - 60px);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    align-items: center;
+  }
+
+  @include lg {
+    padding-left: 60px;
+    padding-right: 60px;
+    width: calc(100% - 120px);
+
+  }
+
+  .navbarToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: $teal;
+    font-size: 24px;
+
+    @include md {
+      display: none;
+    }
+  }
+
+  img {
+    margin-top: 10px;
+    margin-left: 10px;
+    @include md {
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  }
+
+  .mainNav {
+    padding-inline-start: 0px;
+    font-size: 17px;
+    list-style-type: none;
+
+    @include md {
+      margin-right: -5px;
+      line-height: 0.5;
+      margin-top: 17.5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    li {
+      text-align: center;
+      margin: 35px auto;
+
+      @include md {
+        margin: 15px auto;
+        margin: 0;
+      }
+
+      .navLinks {
+        text-decoration: none;
+        color: black;
+        padding: 0px 0px;
+        padding: 10px 10px;
+        margin-left: 40px;
+
+        &:hover {
+          @include md {
+            .navLinks:hover {
+              color: $yellow;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.active {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  animation: slide-in-nav 0.7s ease-out;
+  margin-top: -35px;
+
+  @include md {
+    postion: unset;
+    height: unset;
+    top: unset;
+    left: unset;
+  }
+}
+
+.notActive {
+  display: block;
+  height: 100vh;
+  background-color: white;
+  margin-top: -105vh;
+  animation: slide-out-nav 0.7s ease-out;
+
+  @include md {
+    animation: none;
+    height: unset;
+    margin-top: unset;
+  }
+}
+
+.active-link {
+  border-top: 3px solid $teal;
+  border-bottom: 3px solid $teal;
+  color: $teal;
+  padding: 10px 10px;
+  animation: active-link 0.3s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.59, 2);
+}
+
+// animation
+
+@keyframes active-link {
+  from {
+    border-top-color: white;
+    border-bottom-color: white;
+    color: $yellow;
+    border-width: 3px;
+    padding: 0px 10px;
+  }
+  to {
+    border-top-color: $yellow;
+    border-bottom-color: $yellow;
+    color: $teal;
+    border-width: 3px;
+    padding: 10px 10px;
+  }
+}
+
+@keyframes slide-out-nav {
+  from {
+    margin-top: -10vh;
+  }
+  to {
+    margin-top: -105vh;
+  }
+}
+
+@keyframes slide-in-nav {
+  from {
+    margin-top: -100vh;
+  }
+  to {
+    margin-top: -30px;
+  }
+}

@@ -20,60 +20,13 @@ main {
   height: auto;
 
   @include md {
-    margin: 70px 52px 0px 52px;
+    margin: 70px 22px 0px 22px;
     min-height: 100vh;
   }
 
-  // div {
-  //   height: 200px;
-  //   width: 100%;
-  //   margin-bottom: 20px;
-  // }
-
-  section.title {
-    width: 100%;
-    text-align: center;
-    height: 150px;
-    position: relative;
-    position: relative;
-
-    // @include md {
-    //   width: calc(50% - 40px);
-    //   position: fixed;
-    //   right: 40px;
-    // }
-
-    h1 {
-      font-size: 2.5em;
-      padding: 0.75em;
-      margin: 0px;
-
-      // &::before {
-      //   content: "";
-      //   height: 5px;
-      //   width: 250px;
-      //   left: calc(50% - 125px);
-      //   margin-top: -10px;
-      //   background-color: $teal;
-      //   position: absolute;
-      // }
-
-      // &::after {
-      //   content: "";
-      //   height: 5px;
-      //   width: 250px;
-      //   left: calc(50% - 125px);
-      //   bottom: 40%;
-      //   background-color: $teal;
-      //   position: absolute;
-      // }
-    }
-
-    .typed {
-      display: inline-block;
-      font-size: 25px;
-      margin: 0px;
-    }
+  @include lg {
+    margin: 70px 52px 0px 52px;
+    min-height: 100vh;
   }
 
   section.about-container {
@@ -91,224 +44,6 @@ main {
   }
 }
 
-footer {
-  position: relative;
-  bottom: 0px;
-  z-index: 10;
-  width: 100%;
-  background-color: white;
-  height: 30px;
-  left: 0px;
-
-  @include md {
-    position: fixed;
-    height: 60px;
-  }
-
-  div {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 5px;
-
-    @include md {
-      margin-left: 60px;
-      margin-top: 10px;
-      text-align: left;
-    }
-
-    a {
-      margin-right: 10px;
-      position: relative;
-      cursor: pointer;
-      z-index: 2;
-      color: $teal;
-    }
-  }
-}
-
-.navbar {
-  font-size: 18px;
-  height: 70px;
-  position: fixed;
-  background-color: white;
-  width: calc(100%);
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-
-  @include md {
-    padding-left: 60px;
-    padding-right: 60px;
-    width: calc(100% - 120px);
-  }
-
-  ul {
-    padding-inline-start: 0px;
-    font-size: 17px;
-
-    @include md {
-      margin-right: -5px;
-      line-height: 0.5;
-      margin-top: 17.5px;
-    }
-  }
-
-  img {
-    margin-top: 10px;
-    margin-left: 10px;
-    @include md {
-      margin-top: 0px;
-    }
-  }
-
-  svg {
-    font-size: 20px;
-    margin-top: 15px;
-  }
-}
-
-.main-nav {
-  list-style-type: none;
-  // margin-top: -100vh;
-  display: block;
-}
-
-.nav-links {
-  text-decoration: none;
-  color: black;
-  padding: 0px 0px;
-  padding: 10px 10px;
-}
-
-.main-nav li {
-  text-align: center;
-  margin: 35px auto;
-
-  @include md {
-    margin: 15px auto;
-  }
-}
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: $teal;
-  font-size: 24px;
-}
-
-.active {
-  display: block;
-  height: 100vh;
-  width: 100%;
-  background-color: white;
-  animation: slide-in-nav 0.7s ease-out;
-  margin-top: -35px;
-
-  @include md {
-    postion: unset;
-    height: unset;
-    top: unset;
-    left: unset;
-  }
-}
-
-.not-active {
-  display: block;
-  height: 100vh;
-  background-color: white;
-  margin-top: -105vh;
-  animation: slide-out-nav 0.7s ease-out;
-
-  @include md {
-    animation: none;
-    height: unset;
-    margin-top: unset;
-  }
-}
-
-@keyframes slide-out-nav {
-  from {
-    margin-top: -10vh;
-  }
-  to {
-    margin-top: -105vh;
-  }
-}
-
-@keyframes slide-in-nav {
-  from {
-    margin-top: -100vh;
-  }
-  to {
-    margin-top: -30px;
-  }
-}
-
-.active-link {
-  border-top: 3px solid $teal;
-  border-bottom: 3px solid $teal;
-  color: $teal;
-  padding: 10px 10px;
-  animation: active-link 0.3s;
-  animation-timing-function: cubic-bezier(0.17, 0.67, 0.59, 2);
-}
-
-@keyframes active-link {
-  from {
-    border-top-color: white;
-    border-bottom-color: white;
-    color: $yellow;
-    border-width: 3px;
-    padding: 0px 10px;
-  }
-  to {
-    border-top-color: $yellow;
-    border-bottom-color: $yellow;
-    color: $teal;
-    border-width: 3px;
-    padding: 10px 10px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    align-items: center;
-  }
-
-  .main-nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .main-nav li {
-    margin: 0;
-  }
-
-  .nav-links {
-    margin-left: 40px;
-  }
-
-  .logo {
-    margin-top: 0;
-  }
-
-  .navbar-toggle {
-    display: none;
-  }
-
-  .logo:hover,
-  .nav-links:hover {
-    color: $yellow;
-    text-decoration: none;
-  }
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -319,16 +54,67 @@ footer {
 
   @include md {
     height: 100vh;
-    grid-template-columns: 1fr 0.75fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.5fr 1.5fr;
     grid-template-areas: "upper-boi long-boi" "lower-boi long-boi";
   }
 }
 
+.long-boi {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 1s ease;
+  backface-visibility: hidden;
+  margin: auto;
+  width: 60% !important;
+  top: 35%;
+  position: relative;
+  transform: translateY(-40%);
+
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.long-boi:hover .image {
+  opacity: 1;
+  transform: scale(1.1);
+  top: 17%;
+}
+
+.long-boi:hover {
+  background-color: lighten($color: $yellow, $amount: 5%)
+}
+
+.long-boi:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: $pink;
+  color: $black;
+  font-size: 20px;
+  padding: 16px 32px;
+  border-radius: 5px;
+}
+
 .grid-container-about {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "upper-boi" "long-boi" "lower-boi";
+  grid-template-areas: "upper-boi" "lower-boi" "long-boi";
   height: auto;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
@@ -336,9 +122,21 @@ footer {
   @include md {
     height: 100vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr 1.5fr;
+    grid-template-rows: 0.5fr 1.5fr;
     grid-auto-rows: 1fr;
     grid-template-areas: "upper-boi long-boi" "lower-boi long-boi";
+  }
+
+  .lower-boi {
+    padding: 30px;
+
+    h2 {
+      font-size: 2em;
+    }
+
+    p{ 
+      font-size:1.1em;
+    }
   }
 }
 
@@ -347,6 +145,7 @@ footer {
   grid-area: long-boi;
   background-color: $yellow;
   overflow: hidden;
+  position: relative;
 
   img {
     width: 100%;

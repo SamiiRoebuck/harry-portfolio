@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 
+import styles from "../styles/NavBar.module.scss"
+
 class NavBar extends React.Component {
   constructor(props) {
     super(props)
@@ -23,40 +25,40 @@ class NavBar extends React.Component {
   
   render() {
     return (
-      <nav className="navbar">
+      <nav className={styles.navbar}>
         <span
-          className="navbar-toggle"
-          id="js-navbar-toggle"
+          className={styles.navbarToggle}
+          id={styles.jsNavbarToggle}
           onClick={this.handleClickBurger}
         >
           <FontAwesomeIcon icon={this.state.icon} />
         </span>
         <img src={logo} height="50" alt='logo'/>
         <ul
-          className={`main-nav ${
-            this.state.isToggleOn ? "not-active" : "active"
+          className={`${styles.mainNav} ${
+            this.state.isToggleOn ? `${styles.notActive}` :  `${styles.active}`
           }`}
           id="js-menu"
 
           onClick={this.handleClickNav}
         >
           <li>
-            <Link to="/" className="nav-links" activeClassName="active-link">
+            <Link to="/" className={styles.navLinks} activeClassName={styles.activeLink}>
               Work
             </Link>
           </li>
           <li>
-            <Link to="/about" className="nav-links" activeClassName="active-link">
+            <Link to="/about" className={styles.navLinks} activeClassName={styles.activeLink}>
               About
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="nav-links" activeClassName="active-link">
+            <Link to="/contact" className={styles.navLinks} activeClassName={styles.activeLink}>
               Contact
             </Link>
           </li>
-          <li>
-            <a href="/" className="nav-links">
+          <li> 
+            <a href="/" className={styles.navLinks}>
               Download Portfolio
             </a>
           </li>

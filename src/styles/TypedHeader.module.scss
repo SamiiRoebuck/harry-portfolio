@@ -1,0 +1,26 @@
+@import "_variables.scss";
+@import "_mediaqueries.scss";
+
+@import url("https://use.typekit.net/xzb4vuh.css");
+
+section.title {
+    text-align: center;
+    height: 150px;
+    position: relative;
+    padding: 20px;
+
+    h1 {
+      font-size: 3em;
+      padding: 0.5em;
+      padding-top: 0.25em;
+      margin: 0px;
+      color: $black;
+    }
+
+    .typed {
+      display: inline-block;
+      font-size: 25px;
+      margin: 0px;
+      color: $black;
+    }
+  }

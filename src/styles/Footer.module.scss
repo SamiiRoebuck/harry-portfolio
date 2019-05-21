@@ -1,0 +1,39 @@
+@import "_variables.scss";
+@import "_mediaqueries.scss";
+
+@import url("https://use.typekit.net/xzb4vuh.css");
+
+footer {
+    position: relative;
+    bottom: 0px;
+    z-index: 10;
+    width: 100%;
+    background-color: $white;
+    height: 30px;
+    left: 0px;
+  
+    @include md {
+      position: fixed;
+      height: 60px;
+    }
+  
+    div {
+      font-size: 30px;
+      text-align: center;
+      margin-top: 5px;
+  
+      @include md {
+        margin-left: 60px;
+        margin-top: 10px;
+        text-align: left;
+      }
+  
+      a {
+        margin-right: 10px;
+        position: relative;
+        cursor: pointer;
+        z-index: 2;
+        color: $teal;
+      }
+    }
+  }
