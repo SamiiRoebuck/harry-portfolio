@@ -1,32 +1,65 @@
 import React from "react"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
+import Grid from "../components/Grid"
+import GridSection from "../components/GridSection"
 
 import "../styles/globals.scss"
-import { Link } from "gatsby";
 
 export default () => (
   <React.Fragment>
     <NavBar />
     <main>
-      <div className="grid-container container">
-        <div className="long-boi">
-          <div className="image">
-            <h1>Project Title</h1>
-            <img
-              src="https://placeimg.com/100/100/any"
-              alt="Avatar"
-              
-              style={{ width: "100%" }}
-            />
-          </div>
-          <div class="middle">
-            <Link href="/" class="text">Read more...</Link>
-          </div>
-        </div>
-        <div className="upper-boi" />
-        <div className="lower-boi" />
-      </div>
+      <Grid
+      gridType="gridRightLong"
+      >
+        <GridSection
+          gridsectionclass="longBoi"
+          title="Metrolink Station Redesign"
+          // image="https://placeimg.com/100/100/any"
+          alt="image"
+          link="/"
+        />
+        <GridSection
+          gridsectionclass="upperBoi"
+          title="Gresham Anywhere Chair"
+          // image="https://placeimg.com/100/100/any"
+          alt="image"
+          link="/"
+        />
+        <GridSection
+          gridsectionclass="lowerBoi"
+          title="DJI Osmo Redesign"
+          // image="https://placeimg.com/100/100/any"
+          alt="image"
+          link="/"
+        />
+      </Grid>
+      <Grid
+      gridType="gridLeftLong"
+      >
+        <GridSection
+          gridsectionclass="longBoi"
+          title="Yotel Furniture"
+          // image="https://placeimg.com/100/100/any"
+          alt="image"
+          link="/"
+        />
+        <GridSection
+          gridsectionclass="upperBoi"
+          title="Foot Pump"
+          // image="https://placeimg.com/100/100/any"
+          alt="image"
+          link="/"
+        />
+        <GridSection
+          gridsectionclass="lowerBoi"
+          title="Whisk Mechanism Concept"
+          // image="https://placeimg.com/100/100/any"
+          alt="image"
+          link="/"
+        />
+      </Grid>
     </main>
 
     <Footer />

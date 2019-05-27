@@ -6,165 +6,41 @@
 body {
   font-family: korolev, sans-serif;
   font-size: 16px;
-  height: 100vh;
   color: $black;
 }
 
 main {
-  background-color: $lightestGrey;
   margin: 70px 1px 0px 1px;
   background-attachment: scroll;
   position: relative;
   z-index: 0;
   padding: 0px 0px;
-  height: auto;
 
   @include md {
-    margin: 70px 22px 0px 22px;
-    min-height: 100vh;
+    margin: 70px 22px 60px 22px;
   }
 
   @include lg {
-    margin: 70px 52px 0px 52px;
-    min-height: 100vh;
-  }
-
-  section.about-container {
-    display: flex;
-    flex-wrap: wrap;
-
-    & > div {
-      background-color: #f1f1f1;
-      width: 45%;
-      margin: 1.75%;
-      text-align: center;
-      line-height: 75px;
-      font-size: 30px;
-    }
+    margin: 70px 52px 60px 52px;
   }
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "upper-boi" "long-boi" "lower-boi";
-  height: auto;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-
-  @include md {
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.5fr 1.5fr;
-    grid-template-areas: "upper-boi long-boi" "lower-boi long-boi";
-  }
-}
-
-.long-boi {
-  position: relative;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  height: auto;
-  transition: 1s ease;
-  backface-visibility: hidden;
-  margin: auto;
-  width: 60% !important;
-  top: 35%;
-  position: relative;
-  transform: translateY(-40%);
-
-}
-
-.middle {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+.text-center {
   text-align: center;
 }
 
-.long-boi:hover .image {
-  opacity: 1;
-  transform: scale(1.1);
-  top: 17%;
+.btn {
+  padding: 15px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  background-color: $white;
+  text-decoration: none;
+  color: $teal;
+  width: 50%;
+  font-size: 1.1em;
 }
 
-.long-boi:hover {
-  background-color: lighten($color: $yellow, $amount: 5%)
-}
-
-.long-boi:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: $pink;
-  color: $black;
-  font-size: 20px;
-  padding: 16px 32px;
-  border-radius: 5px;
-}
-
-.grid-container-about {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "upper-boi" "lower-boi" "long-boi";
-  height: auto;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-
-  @include md {
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr;
-    grid-auto-rows: 1fr;
-    grid-template-areas: "upper-boi long-boi" "lower-boi long-boi";
-  }
-
-  .lower-boi {
-    padding: 30px;
-
-    h2 {
-      font-size: 2em;
-    }
-
-    p{ 
-      font-size:1.1em;
-    }
-  }
-}
-
-.long-boi {
-  min-height: 200px;
-  grid-area: long-boi;
-  background-color: $yellow;
-  overflow: hidden;
-  position: relative;
-
-  img {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-}
-
-.upper-boi {
-  min-height: 200px;
-  grid-area: upper-boi;
-  background-color: $teal;
-}
-
-.lower-boi {
-  min-height: 200px;
-  grid-area: lower-boi;
-  background-color: $pink;
-}
 
 @media all and (-ms-high-contrast: none) {
   .grid-container {
