@@ -18,21 +18,21 @@ export default () => (
           title="Metrolink Station Redesign"
           // image="https://placeimg.com/100/100/any"
           alt="image"
-          link="/"
+          link="/metrolink"
         />
         <GridSection
           gridsectionclass="upperBoi"
           title="Gresham Anywhere Chair"
           // image="https://placeimg.com/100/100/any"
           alt="image"
-          link="/"
+          link="/gresham"
         />
         <GridSection
           gridsectionclass="lowerBoi"
           title="DJI Osmo Redesign"
           // image="https://placeimg.com/100/100/any"
           alt="image"
-          link="/"
+          link="/osmo"
         />
       </Grid>
       <Grid
@@ -43,21 +43,21 @@ export default () => (
           title="Yotel Furniture"
           // image="https://placeimg.com/100/100/any"
           alt="image"
-          link="/"
+          link="/yotel"
         />
         <GridSection
           gridsectionclass="upperBoi"
           title="Foot Pump"
           // image="https://placeimg.com/100/100/any"
           alt="image"
-          link="/"
+          link="/pump"
         />
         <GridSection
           gridsectionclass="lowerBoi"
           title="Whisk Mechanism Concept"
           // image="https://placeimg.com/100/100/any"
           alt="image"
-          link="/"
+          link="/whisk"
         />
       </Grid>
     </main>

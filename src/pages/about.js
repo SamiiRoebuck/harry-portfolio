@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 import Grid from "../components/Grid"
 import GridSection from "../components/GridSection"
 
-import about from "../images/about.jpg"
+// import about from "../images/about.jpg"
 
 import "../styles/globals.scss"
 import { Link } from "gatsby"

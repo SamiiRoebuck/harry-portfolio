@@ -10,6 +10,7 @@ body {
 }
 
 main {
+  display: block;
   margin: 70px 1px 0px 1px;
   background-attachment: scroll;
   position: relative;
@@ -41,32 +42,3 @@ main {
   font-size: 1.1em;
 }
 
-
-@media all and (-ms-high-contrast: none) {
-  .grid-container {
-    display: -ms-grid;
-    -ms-grid-columns: 1fr 0.75fr;
-    -ms-grid-rows: 1.5fr 1.5fr;
-  }
-
-  .long-boi {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-col: 2;
-    -ms-grid-col-span: 1;
-  }
-
-  .upper-boi {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-col: 1;
-    -ms-grid-col-span: 1;
-  }
-
-  .lower-boi {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    -ms-grid-col: 1;
-    -ms-grid-col-span: 1;
-  }
-}

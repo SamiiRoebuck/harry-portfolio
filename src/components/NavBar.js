@@ -33,7 +33,9 @@ class NavBar extends React.Component {
         >
           <FontAwesomeIcon icon={this.state.icon} />
         </span>
+        <Link to="/">
         <img src={logo} height="50" alt='logo'/>
+        </Link>
         <ul
           className={`${styles.mainNav} ${
             this.state.isToggleOn ? `${styles.notActive}` :  `${styles.active}`

@@ -1,0 +1,29 @@
+@import "./mediaqueries";
+@import "./variables";
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+
+  li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+
+    .icon {
+      height: 60px;
+      width: auto;
+    }
+
+}
+}

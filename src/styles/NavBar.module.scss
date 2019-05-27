@@ -104,10 +104,10 @@
   margin-top: -35px;
 
   @include md {
-    postion: unset;
-    height: unset;
-    top: unset;
-    left: unset;
+    position: none;
+    height: none;
+    top: none;
+    left: none;
   }
 }
 
@@ -120,8 +120,8 @@
 
   @include md {
     animation: none;
-    height: unset;
-    margin-top: unset;
+    height: 0px;
+    margin-top: 0px;
   }
 }
 

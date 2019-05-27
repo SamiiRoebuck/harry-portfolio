@@ -1,12 +1,7 @@
 import React from "react"
 import styles from "../styles/Grid.module.scss"
 
-import { Link } from "gatsby"
-
 class GridSection extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   render() {
     if (this.props.link === undefined) {
@@ -28,10 +23,10 @@ class GridSection extends React.Component {
               //   style={{ width: "100%" }}
             />
           </div>
-          <div class={styles.middle}>
-            <Link to={this.props.link} class={styles.text}>
+          <div className={styles.middle}>
+            <a href={this.props.link} className={styles.text} rel="noopener noreferrer" target="_blank">
               Read more...
-            </Link>
+            </a>
           </div>
         </div>
       )
