@@ -11,13 +11,17 @@ import about from "../images/about.jpg"
 import "../styles/globals.scss"
 import { Link } from "gatsby"
 
+import objectFitImages from 'object-fit-images';
+
+objectFitImages();
+
 export default () => (
   <React.Fragment>
     <NavBar />
     <main>
       <Grid gridType="gridUpperSmall">
         <GridSection gridsectionclass="longBoi">
-          <img src={about} alt="harry york" />
+          <img src={about} alt="harry york" id="aboutImage" data-object-fit="cover" />
         </GridSection>
         <GridSection gridsectionclass="upperBoi">
           <TypedHeader />

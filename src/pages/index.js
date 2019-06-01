@@ -4,6 +4,15 @@ import Footer from "../components/Footer"
 import Grid from "../components/Grid"
 import GridSection from "../components/GridSection"
 
+import metroImage from "../images/metrolink/box-image.jpg"
+import osmoImage from "../images/osmo/box-image.jpg"
+import pumpImage from "../images/pump/box-image.jpg"
+import yotelImage from "../images/yotel/box-image.jpg"
+import whiskImage from "../images/whisk/box-image.jpg"
+import chairImage from "../images/gresham/box-image.jpg"
+
+
+
 import "../styles/globals.scss"
 
 export default () => (
@@ -16,21 +25,21 @@ export default () => (
         <GridSection
           gridsectionclass="longBoi"
           title="Metrolink Station Redesign"
-          // image="https://placeimg.com/100/100/any"
+          image={metroImage}
           alt="image"
           link="/metrolink"
         />
         <GridSection
           gridsectionclass="upperBoi"
           title="Gresham Anywhere Chair"
-          // image="https://placeimg.com/100/100/any"
+          image={chairImage}
           alt="image"
           link="/gresham"
         />
         <GridSection
           gridsectionclass="lowerBoi"
           title="DJI Osmo Redesign"
-          // image="https://placeimg.com/100/100/any"
+          image={osmoImage}
           alt="image"
           link="/osmo"
         />
@@ -41,21 +50,21 @@ export default () => (
         <GridSection
           gridsectionclass="longBoi"
           title="Yotel Furniture"
-          // image="https://placeimg.com/100/100/any"
+          image={yotelImage}
           alt="image"
           link="/yotel"
         />
         <GridSection
           gridsectionclass="upperBoi"
           title="Foot Pump"
-          // image="https://placeimg.com/100/100/any"
+          image={pumpImage}
           alt="image"
           link="/pump"
         />
         <GridSection
           gridsectionclass="lowerBoi"
-          title="Whisk Mechanism Concept"
-          // image="https://placeimg.com/100/100/any"
+          title="Mechanical Whisk"
+          image={whiskImage}
           alt="image"
           link="/whisk"
         />

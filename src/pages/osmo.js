@@ -17,7 +17,7 @@ export default () => (
       <Grid gridType="gridUpperSmall">
         <GridSection gridsectionclass="longBoi" />
         <GridSection gridsectionclass="upperBoi">
-          <h1>DJI OSMO redesign</h1>
+          <h1  className={styles.title}>DJI OSMO redesign</h1>
           <p className={styles.software}>Technologies Used:</p>
           <ul className={styles.softwareList}>
             <li><img src={sw} alt="solidworks logo" className={styles.icon}></img></li>

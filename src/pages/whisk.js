@@ -18,7 +18,7 @@ export default () => (
       <Grid gridType="gridUpperSmall">
         <GridSection gridsectionclass="longBoi" />
         <GridSection gridsectionclass="upperBoi">
-          <h1>Whisk</h1>
+          <h1  className={styles.title}>Whisk</h1>
           <p className={styles.software}>Technologies Used:</p>
           <ul className={styles.softwareList}>
             <li>
@@ -49,7 +49,7 @@ export default () => (
             <strong>About</strong>
           </h4>
           <p>
-          The whisk was chosen as it is a device that can be mechanical already, but can be used in a different way when a new mechanism is implemented. If this project, instead of using bevel gears, rack and pinion gears were used to turn spur gears.
+          The whisk was chosen as it is a device that can be mechanical already, but can be used in a different way when a new mechanism is implemented. If this project, instead of using bevel gears, with a rotary crank this product uses crank arms with a spring return system to open the arms again, which in turn rotates the whisk heads.
           </p>
         </GridSection>
       </Grid>

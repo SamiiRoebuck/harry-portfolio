@@ -60,7 +60,7 @@ class NavBar extends React.Component {
             </Link>
           </li>
           <li> 
-            <a href="/" className={styles.navLinks}>
+            <a href="https://docs.google.com/document/d/1Q2SPrZtmOcyH8h51dm0H5JdfXU2_vDeTnGE2Ime0rZc/export?format=pdf" target="_blank" className={styles.navLinks}>
               Download Portfolio
             </a>
           </li>

@@ -23,7 +23,7 @@ export default () => (
         />
         <GridSection
           gridsectionclass="upperBoi"
-        ><h1>Foot Pump</h1>
+        ><h1  className={styles.title}>Foot Pump</h1>
                   <p className={styles.software}>Technologies Used:</p>
           <ul className={styles.softwareList}>
             <li><img src={sw} alt="solidworks logo" className={styles.icon}></img></li>

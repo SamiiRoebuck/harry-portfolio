@@ -25,7 +25,7 @@ class GridSection extends React.Component {
           </div>
           <div className={styles.middle}>
             <a href={this.props.link} className={styles.text} rel="noopener noreferrer" target="_blank">
-              Read more...
+              View project
             </a>
           </div>
         </div>
