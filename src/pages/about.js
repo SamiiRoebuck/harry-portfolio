@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 import Grid from "../components/Grid"
 import GridSection from "../components/GridSection"
 
-// import about from "../images/about.jpg"
+import about from "../images/about.jpg"
 
 import "../styles/globals.scss"
 import { Link } from "gatsby"
@@ -17,7 +17,7 @@ export default () => (
     <main>
       <Grid gridType="gridUpperSmall">
         <GridSection gridsectionclass="longBoi">
-          {/* <img src={about} alt="harry york" /> */}
+          <img src={about} alt="harry york" />
         </GridSection>
         <GridSection gridsectionclass="upperBoi">
           <TypedHeader />

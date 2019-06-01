@@ -42,3 +42,53 @@ main {
   font-size: 1.1em;
 }
 
+form {
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px;
+
+  div {
+    // width: 100%;
+    position: relative;
+    border-bottom: 2px solid $teal;
+    padding-bottom: 13px;
+    margin-bottom: 27px;
+  }
+
+  .labelInput {
+    font-size: 14px;
+    color: $black;
+    line-height: 1.5;
+    padding-left: 5px;
+  }
+
+  input.input {
+    height: 40px;
+  }
+
+  .input {
+    display: block;
+    width: 100%;
+    background: transparent;
+    // font-family: Poppins-Medium;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.2;
+    padding: 0 5px;
+  }
+  input,
+  textarea {
+    outline: none;
+    border: none;
+  }
+
+  .submit {
+    border: 0px;
+    background-color: #ffc9f1;
+    color: #1f1f1f;
+    font-size: 20px;
+    padding: 16px 32px;
+    border-radius: 5px;
+  }
+}
