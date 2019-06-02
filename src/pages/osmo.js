@@ -8,14 +8,26 @@ import sw from "../images/sw.svg"
 import max from "../images/3ds.png"
 import pro from "../images/pro.png"
 
+import drawing from '../images/osmo/Sketch_renders.jpeg'
+import render4 from '../images/osmo/box-image.jpg'
+import render2 from '../images/osmo/Render 2.jpg'
+
+import render5 from '../images/osmo/render 5.jpg'
+import render6 from '../images/osmo/render 6.jpg'
+
+
+
 import "../styles/globals.scss"
 import styles from "../styles/ProjectPage.module.scss"
 export default () => (
   <React.Fragment>
     <NavBar />
     <main>
-      <Grid gridType="gridUpperSmall">
-        <GridSection gridsectionclass="longBoi" />
+      <Grid gridType="gridProjectUpperSmall">
+        <GridSection gridsectionclass="longBoi">
+        <img src={render4} alt="render of the osmo" data-object-fit="cover" />
+
+        </GridSection>
         <GridSection gridsectionclass="upperBoi">
           <h1  className={styles.title}>DJI OSMO redesign</h1>
           <p className={styles.software}>Technologies Used:</p>
@@ -51,6 +63,27 @@ export default () => (
             ergonomic considerations and into what visual technologies can be
             deployed into the handheld device.
           </p>
+        </GridSection>
+      </Grid>
+      <Grid gridType="fullWidth">
+        <GridSection gridsectionclass="longBoi">
+        <img src={render5} alt="render of the osmo redesign from the back" data-object-fit="cover" />
+
+</GridSection>
+        <GridSection gridsectionclass="upperBoi">
+        <img src={drawing} alt="sketches of the redesign" data-object-fit="cover" />
+      
+        </GridSection>
+
+        <GridSection gridsectionclass="lowerBoi" >
+        <img src={render6} alt="render of the osmo lying down" data-object-fit="cover" />
+
+        </GridSection>
+      </Grid>
+      <Grid gridType="single">
+        <GridSection gridsectionclass="upperBoi">
+        <img src={render2} alt="large render of the osmo from the front" data-object-fit="cover" />
+
         </GridSection>
       </Grid>
     </main>

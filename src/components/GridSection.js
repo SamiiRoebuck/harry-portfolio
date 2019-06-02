@@ -20,7 +20,7 @@ class GridSection extends React.Component {
             <img
               src={this.props.image}
               alt={this.props.alt}
-              //   style={{ width: "100%" }}
+              className={styles[this.props.imageclass]}
             />
           </div>
           <div className={styles.middle}>

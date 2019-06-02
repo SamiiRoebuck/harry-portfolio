@@ -15,6 +15,8 @@ import lineDraw from '../images/metrolink/line-drawing.jpg'
 import closeDraw from '../images/metrolink/close-drawing.jpg'
 import poster from '../images/metrolink/poster.jpg'
 import side from '../images/metrolink/side-render.jpg'
+import drawing from '../images/metrolink/drawing.jpeg'
+
 
 
 import "../styles/globals.scss"
@@ -26,7 +28,7 @@ export default () => (
     <main>
       <Grid gridType="gridProjectUpperSmall">
         <GridSection gridsectionclass="longBoi">
-          <img src={model} alt="image"></img>
+          <img src={model} alt="model of the station redesign"></img>
         </GridSection>
         <GridSection gridsectionclass="upperBoi">
           <h1 className={styles.title}>Metrolink Station Redesign</h1>
@@ -54,26 +56,32 @@ export default () => (
       </Grid>
       <Grid gridType="fullWidth">
         <GridSection gridsectionclass="longBoi">
-        <img src={lineDraw} alt="image" data-object-fit="cover" />
+        <img src={lineDraw} alt="line drawing of the front of the redesigned station" data-object-fit="cover" />
 </GridSection>
         <GridSection gridsectionclass="upperBoi">
-          <img src={fromAbove} alt="image" data-object-fit="cover" />
+          <img src={fromAbove} alt="render showing the solar panels on the top of the station" data-object-fit="cover" />
         </GridSection>
 
         <GridSection gridsectionclass="lowerBoi" >
-        <img src={closeDraw} alt="image" data-object-fit="cover" />
+        <img src={closeDraw} alt="completed drawing of the front of the station" data-object-fit="cover" />
 
         </GridSection>
       </Grid>
       <Grid gridType="full">
         <GridSection gridsectionclass="upperBoi">
-          <img src={poster} alt="image" data-object-fit="cover" />
+          <img src={poster} alt="render of the underside of the station showing the posters" data-object-fit="cover" />
         </GridSection>
         <GridSection gridsectionclass="lowerBoi">
-          <img src={side} alt="image" data-object-fit="cover" />
+          <img src={side} alt="render of the station from the side, showing the chairs" data-object-fit="cover" />
         </GridSection>
         <GridSection gridsectionclass="longBoi">
-          <img src={GA} alt="image" data-object-fit="cover" />
+          <img src={drawing} alt="full length drawing of the station" data-object-fit="cover" />
+        </GridSection>
+      </Grid>
+      <Grid gridType="single">
+        <GridSection gridsectionclass="upperBoi">
+        <img src={GA} alt="general arrangement drawing of the station" data-object-fit="cover" />
+
         </GridSection>
       </Grid>
     </main>

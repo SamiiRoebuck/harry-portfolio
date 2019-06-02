@@ -34,11 +34,11 @@ export default () => (
           </p>
           <p>
             I'm a professionally certified SolidWorks user and a proficient user
-            of Fusion 360, 3DSMAX, and Adobe Creative Cloud 
+            of Fusion 360, 3DSMAX, and Adobe Creative Cloud. I have interests in furniture and prop making, eco-design, packaging
+            design and 3D modelling.
           </p>
           <p>
-            I have interests in furniture and prop making, eco-design, packaging
-            design and 3D modelling.
+          Have a look through some snippets of my work on my website or download my portfolio for a more indepth view!
           </p>
           <br/>
           <h3 className="text-center">Want to chat about working together?</h3>

@@ -15,7 +15,7 @@ class TypedHeader extends React.Component {
             fadeOut: true
         }
 
-        var typed = new Typed("section p", options);
+        new Typed("section p", options);
     }
 
     render() {

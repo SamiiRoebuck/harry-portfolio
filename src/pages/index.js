@@ -11,8 +11,6 @@ import yotelImage from "../images/yotel/box-image.jpg"
 import whiskImage from "../images/whisk/box-image.jpg"
 import chairImage from "../images/gresham/box-image.jpg"
 
-
-
 import "../styles/globals.scss"
 
 export default () => (
@@ -20,52 +18,58 @@ export default () => (
     <NavBar />
     <main>
       <Grid
-      gridType="gridRightLong"
+      gridType="gridRightLongWork"
       >
         <GridSection
           gridsectionclass="longBoi"
           title="Metrolink Station Redesign"
           image={metroImage}
-          alt="image"
+          imageclass="workImage"
+          alt="render of station redesign"
           link="/metrolink"
         />
         <GridSection
           gridsectionclass="upperBoi"
           title="Gresham Anywhere Chair"
           image={chairImage}
-          alt="image"
+          imageclass="workImage"
+          alt="render of chair"
           link="/gresham"
         />
         <GridSection
           gridsectionclass="lowerBoi"
           title="DJI Osmo Redesign"
           image={osmoImage}
-          alt="image"
+          imageclass="workImage"
+          alt="render of osmo redesign"
           link="/osmo"
         />
       </Grid>
       <Grid
-      gridType="gridLeftLong"
+      gridType="gridLeftLongWork"
       >
         <GridSection
           gridsectionclass="longBoi"
           title="Yotel Furniture"
           image={yotelImage}
-          alt="image"
+          imageclass="workImage"
+          alt="render of yotel bed"
           link="/yotel"
         />
         <GridSection
           gridsectionclass="upperBoi"
           title="Foot Pump"
           image={pumpImage}
-          alt="image"
+          imageclass="workImage"
+          alt="render of foot pump"
           link="/pump"
         />
         <GridSection
           gridsectionclass="lowerBoi"
           title="Mechanical Whisk"
+          imageclass="workImage"
           image={whiskImage}
-          alt="image"
+          alt="render of whisk"
           link="/whisk"
         />
       </Grid>

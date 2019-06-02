@@ -7,6 +7,14 @@ import GridSection from "../components/GridSection"
 import sw from "../images/sw.svg"
 import pro from "../images/pro.png"
 
+import box from '../images/yotel/box-image.jpg'
+import floor from '../images/yotel/floorplan.jpg'
+import ga1 from '../images/yotel/ga1.jpg'
+import render1 from '../images/yotel/render1.jpg'
+import render2 from '../images/yotel/render2.jpg'
+
+
+
 import "../styles/globals.scss"
 import styles from "../styles/ProjectPage.module.scss"
 
@@ -14,8 +22,11 @@ export default () => (
   <React.Fragment>
     <NavBar />
     <main>
-      <Grid gridType="gridUpperSmall">
-        <GridSection gridsectionclass="longBoi" />
+      <Grid gridType="gridProjectUpperSmall">
+        <GridSection gridsectionclass="longBoi">
+        <img src={box} alt="render of the bed" data-object-fit="cover" />
+
+        </GridSection>
         <GridSection gridsectionclass="upperBoi">
           <h1  className={styles.title}>Yotel</h1>
           <p className={styles.software}>Technologies Used:</p>
@@ -54,6 +65,23 @@ export default () => (
             designed included a dining table and stairs, kitchen workspace,
             wardrobe, and the bed that can be seen here.
           </p>
+        </GridSection>
+      </Grid>
+      <Grid gridType="fullWidth">
+        <GridSection gridsectionclass="longBoi">
+          <img src={render1} alt="close up of the whisk mechanism" data-object-fit="cover" />
+        </GridSection>
+        <GridSection gridsectionclass="upperBoi">
+          <img src={floor} alt="floor plan of the room" data-object-fit="cover" />
+        </GridSection>
+
+        <GridSection gridsectionclass="lowerBoi">
+          <img src={render2} alt="large render of the whisk on a table" data-object-fit="cover" />
+        </GridSection>
+      </Grid>
+      <Grid gridType="single">
+        <GridSection gridsectionclass="upperBoi">
+          <img src={ga1} alt="general arrangement drawing for the whisk" data-object-fit="cover" />
         </GridSection>
       </Grid>
     </main>

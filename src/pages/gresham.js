@@ -25,7 +25,7 @@ export default () => (
     <main>
       <Grid gridType="gridProjectUpperSmall">
         <GridSection gridsectionclass="longBoi">
-          <img src={proto} alt="image" data-object-fit="cover" />
+          <img src={proto} alt="3D printed model of the chair" data-object-fit="cover" />
         </GridSection>
         <GridSection gridsectionclass="upperBoi">
           <h1 className={styles.title}>Gresham 'Anywhere Chair' Concept</h1>
@@ -82,20 +82,20 @@ export default () => (
       </Grid>
       <Grid gridType="fullWidth">
         <GridSection gridsectionclass="longBoi">
-        <img src={drawing} alt="image" data-object-fit="cover" />
+        <img src={drawing} alt="drawing of the chair with a man sat in it" data-object-fit="cover" />
 </GridSection>
         <GridSection gridsectionclass="upperBoi">
-          <img src={tricolor} alt="image" data-object-fit="cover" />
+          <img src={tricolor} alt="render of the chair in three different colours" data-object-fit="cover" />
         </GridSection>
 
         <GridSection gridsectionclass="lowerBoi" >
-        <img src={office} alt="image" data-object-fit="cover" />
+        <img src={office} alt="in situ render of the chair" data-object-fit="cover" />
 
         </GridSection>
       </Grid>
       <Grid gridType="single">
         <GridSection gridsectionclass="upperBoi">
-          <img src={gedraw} alt="image" data-object-fit="cover" />
+          <img src={gedraw} alt="general arrangement drawing for the chair" data-object-fit="cover" />
         </GridSection>
       </Grid>
     </main>
