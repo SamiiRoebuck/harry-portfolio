@@ -8,11 +8,11 @@ import sw from '../images/sw.svg'
 import max from '../images/3ds.png'
 import pro from '../images/pro.png'
 
-import model from '../images/metrolink/model.jpeg'
+import model from '../images/metrolink/model.jpg'
 import GA from '../images/metrolink/GA.jpg'
 import fromAbove from '../images/metrolink/from-above.jpg'
 import lineDraw from '../images/metrolink/line-drawing.jpg'
-import closeDraw from '../images/metrolink/close-drawing.png'
+import closeDraw from '../images/metrolink/close-drawing.jpg'
 import poster from '../images/metrolink/poster.jpg'
 import side from '../images/metrolink/side-render.jpg'
 
