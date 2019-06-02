@@ -10,7 +10,7 @@ import pro from "../images/pro.png"
 
 import front from "../images/whisk/front.jpg"
 import close from "../images/whisk/close.jpg"
-import ga from "../images/whisk/ga.jpg"
+import ga from "../images/whisk/GA.jpg"
 import wood from "../images/whisk/wood.jpg"
 import box from "../images/whisk/box-image.jpg"
 
