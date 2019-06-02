@@ -11,9 +11,9 @@ import about from "../images/about.jpg"
 import "../styles/globals.scss"
 import { Link } from "gatsby"
 
-import objectFitImages from 'object-fit-images';
+import objectFitImages from "object-fit-images"
 
-objectFitImages();
+objectFitImages()
 
 export default () => (
   <React.Fragment>
@@ -21,7 +21,12 @@ export default () => (
     <main>
       <Grid gridType="gridUpperSmall">
         <GridSection gridsectionclass="longBoi">
-          <img src={about} alt="harry york" id="aboutImage" data-object-fit="cover" />
+          <img
+            src={about}
+            alt="harry york"
+            id="aboutImage"
+            data-object-fit="cover"
+          />
         </GridSection>
         <GridSection gridsectionclass="upperBoi">
           <TypedHeader />
@@ -33,22 +38,45 @@ export default () => (
             love for all things eco-friendly!
           </p>
           <p>
-            I'm a professionally certified SolidWorks user and a proficient user
-            of Fusion 360, 3DSMAX, and Adobe Creative Cloud. I have interests in furniture and prop making, eco-design, packaging
-            design and 3D modelling.
+            Some of my key skills include certification at Professional level in{" "}
+            <strong>Solidworks</strong>, as well as experience using and
+            teaching <strong>Cura</strong> and <strong>NetFabb</strong> for
+            optimising <strong>adative manufacturing</strong>. As well as use of{" "}
+            <strong>Procreate</strong>, (as well as{" "}
+            <strong>Adobe Creative Cloud</strong> programs) and{" "}
+            <strong>3DS MAX</strong> to create detailed sketch renders and
+            polished graphical renders.
           </p>
           <p>
-          Have a look through some snippets of my work on my website or download my portfolio for a more indepth view!
+            Have a look through some snippets of my work on my website or
+            download my portfolio for a more indepth view!
           </p>
-          <br/>
-          <h3 className="text-center">Want to chat about working together?</h3>
-          <Link to="/contact" className="btn">
-            Contact me here
-          </Link>
+          <br />
+          <div className="half">
+            <h3 className="text-center">
+              Want to chat about working together?
+            </h3>
+            <Link to="/contact" className="btn">
+              Contact me here
+            </Link>
+          </div>
+          <div className="half">
+            <h4 className="text-center">
+              Want to see more of my artwork?
+            </h4>
+            <a
+              href="https://www.instagram.com/harryyork97/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn"
+            >
+              Check out my Instagram
+            </a>
+          </div>
         </GridSection>
       </Grid>
-      <Grid gridType="gridLeftLong">
-        <GridSection gridsectionclass="longBoi">
+      <Grid gridType="single">
+        <GridSection gridsectionclass="upperBoi">
           <h1>Say Hello!</h1>
           <form
             name="contact"
@@ -96,15 +124,12 @@ export default () => (
               />
             </div>
             <p>
-              <button className="submit" type="submit">Send</button>
+              <button className="submit" type="submit">
+                Send
+              </button>
             </p>
           </form>
         </GridSection>
-        <GridSection gridsectionclass="upperBoi">
-          <h2>Want to see more of my artwork and renders?</h2>
-          <p>Take a look a my instagram for my most upto date work.</p>
-        </GridSection>
-        <GridSection gridsectionclass="lowerBoi" />
       </Grid>
     </main>
     <Footer />

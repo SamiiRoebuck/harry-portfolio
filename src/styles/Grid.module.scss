@@ -45,7 +45,7 @@
 %gridSmall {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "upperBoi" "longBoi" "lowerBoi";
+  grid-template-areas: "longBoi" "upperBoi" "lowerBoi" ;
   height: auto;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
@@ -137,7 +137,7 @@
 .gridRightLong {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "upperBoi" "longBoi" "lowerBoi";
+  grid-template-areas: "upperBoi" "lowerBoi" "longBoi";
   // grid-auto-rows: min-content;
   height: auto;
   grid-column-gap: 10px;
@@ -179,7 +179,7 @@
 .gridLeftLong {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "upperBoi" "longBoi" "lowerBoi";
+  grid-template-areas: "upperBoi" "lowerBoi" "longBoi";
   height: auto;
   grid-column-gap: 10px;
   grid-row-gap: 10px;

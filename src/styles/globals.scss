@@ -10,6 +10,11 @@ body {
   color: $black;
 }
 
+.half {
+  width: 50%;
+  display: inline-block;
+}
+
 main {
   display: block;
   margin: 70px 1px 50px 1px;
