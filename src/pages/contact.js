@@ -63,7 +63,10 @@ export default () => (
             </p>
           </form>
         </GridSection>
-        <GridSection gridsectionclass="upperBoi" />
+        <GridSection gridsectionclass="upperBoi">
+          <h2>Want to see more of my artwork and renders?</h2>
+          <p>Take a look a my instagram for my most upto date work.</p>
+        </GridSection>
         <GridSection gridsectionclass="lowerBoi" />
       </Grid>
     </main>

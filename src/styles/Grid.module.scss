@@ -33,7 +33,7 @@
   text-align: center;
 
   @include md {
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     top: 80%;
     left: 50%;
@@ -222,7 +222,7 @@
   grid-template-areas: "upperBoi" "lowerBoi" "longBoi";
   height: auto;
   grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-row-gap: 10px;margin-bottom: 10px;
 
   @include md {
     min-height: calc(100vh - 130px);
