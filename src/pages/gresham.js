@@ -11,7 +11,7 @@ import cura from "../images/cura.png"
 
 import proto from "../images/gresham/prototype.jpeg"
 import drawing from "../images/gresham/drawing.jpeg"
-import gedraw from "../images/gresham/ge-draw.png"
+import gedraw from "../images/gresham/ge-draw.jpg"
 import office from "../images/gresham/office-2.jpg"
 import tricolor from "../images/gresham/Render 10.jpg"
 
