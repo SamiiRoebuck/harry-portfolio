@@ -52,32 +52,19 @@ export default () => (
             download my portfolio for a more indepth view!
           </p>
           <br />
-          <div className="half">
+          <div>
             <h3 className="text-center">
               Want to chat about working together?
             </h3>
-            <Link to="/contact" className="btn">
+            <a href="#contact" className="btn">
               Contact me here
-            </Link>
-          </div>
-          <div className="half">
-            <h4 className="text-center">
-              Want to see more of my artwork?
-            </h4>
-            <a
-              href="https://www.instagram.com/harryyork97/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn"
-            >
-              Check out my Instagram
             </a>
           </div>
         </GridSection>
       </Grid>
       <Grid gridType="single">
         <GridSection gridsectionclass="upperBoi">
-          <h1>Say Hello!</h1>
+          <h1 className="text-center" id="contact">Say Hello!</h1>
           <form
             name="contact"
             method="post"
