@@ -54,13 +54,8 @@ class NavBar extends React.Component {
               About & Contact 
             </Link>
           </li>
-          {/* <li>
-            <Link to="/contact" className={styles.navLinks} activeClassName={styles.activeLink}>
-              Contact
-            </Link>
-          </li> */}
           <li> 
-            <a href="https://docs.google.com/document/d/1Q2SPrZtmOcyH8h51dm0H5JdfXU2_vDeTnGE2Ime0rZc/export?format=pdf" target="_blank" rel="noopener noreferrer" className={styles.navLinks}>
+            <a href='https://docs.google.com/uc?export=download&id=13fD_ZP6a1JwOeY24GFpIGAZUAdU5ab4x' target="_blank" rel="noopener noreferrer" className={styles.navLinks}>
               Download Portfolio
             </a>
           </li>
