@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer>
       <div>
-        <a href="https://www.instagram.com/harryyork97/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/harryyorkdesign/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
         <a href="https://www.linkedin.com/in/harry-york/" target="_blank" rel="noopener noreferrer">
