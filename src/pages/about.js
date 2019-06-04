@@ -41,7 +41,7 @@ export default () => (
             Some of my key skills include certification at Professional level in{" "}
             <strong>Solidworks</strong>, as well as experience using and
             teaching <strong>Cura</strong> and <strong>NetFabb</strong> for
-            optimising <strong>adative manufacturing</strong>. As well as use of{" "}
+            optimising <strong>additive manufacturing</strong>. As well as use of{" "}
             <strong>Procreate</strong>, (as well as{" "}
             <strong>Adobe Creative Cloud</strong> programs) and{" "}
             <strong>3DS MAX</strong> to create detailed sketch renders and
