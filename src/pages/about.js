@@ -34,7 +34,7 @@ export default () => (
         <GridSection gridsectionclass="lowerBoi">
           <h2>Hey There!</h2>
           <p>
-            I'm Harry, I'm a passionate product designer/design enginneer with a
+            I'm Harry, I'm a passionate product designer/design engineer with a
             love for all things eco-friendly!
           </p>
           <p>
