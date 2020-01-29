@@ -9,7 +9,6 @@ import GridSection from "../components/GridSection"
 import about from "../images/about.jpg"
 
 import "../styles/globals.scss"
-import { Link } from "gatsby"
 
 import objectFitImages from "object-fit-images"
 
